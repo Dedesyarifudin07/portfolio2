@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+/* ===================================NAVBAR=========================== */
+nav a.nav-link{
+  font-weight: 40px;
+  cursor: pointer;
+  color: red;
+}
+nav{
+  background-color: aqua;
+}
+nav form.d-flex{
+  margin-right: 250px;
+  
+}
+nav form.d-flex input{
+  width: 80%;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a:nth-of-type(2){
+  color:blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* slide */
+
+img.d-block{
+  height: 450px;
+  background-position: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* project */
+.card{
+  width: 18rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Project{
+  padding-top: 10px;
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Project h1{
+  margin-bottom: 10px;
 }
