@@ -3,7 +3,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
     container : {
-      center :  true
+      center :  true,
+      padding :'16px',
 
     },
     extend: {

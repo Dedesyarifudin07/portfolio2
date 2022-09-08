@@ -4,7 +4,7 @@ import Home from './Components/Home.js';
 function App() {
   return (
    
-          <div className="App container">
+          <div className="App w-full ">
             <Home/>
           </div>
       
