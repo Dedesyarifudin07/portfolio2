@@ -12,8 +12,8 @@ const Portfolio = () => {
         <div className='container'>
             <div className='max-w-xl mx-auto text-center mb-16'>
                 <h4 className='font-semibold text-lg text-primary uppercase mb-2 '>Portfolio</h4>
-                <h2 className='font-bold text-3xl text-dark mb-4'>Project Terbaru</h2>
-                <p className='font-medium text-md text-secondary'>lorem ipsum dollor sit amet lorem dolor ipsum sit amemt cuahrt keseni ritual adoasnd sajdsd
+                <h2 className='font-bold text-3xl text-dark mb-4 sm:text-4xl lg:text-5xl'>Project Terbaru</h2>
+                <p className='font-medium text-md text-secondary md:text-lg'>lorem ipsum dollor sit amet lorem dolor ipsum sit amemt cuahrt keseni ritual adoasnd sajdsd
                     sdasdsad sdkuyyrter dede syarifudin adaasnjdkad jdsasd dedhfg shasid hdsbgsa hjasd
                 </p>
             </div>
