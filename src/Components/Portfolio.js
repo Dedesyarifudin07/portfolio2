@@ -1,10 +1,6 @@
 import React from 'react'
-import Laptop from '../img/laptop.jpeg';
-import pc from '../img/rakitpc.jpeg';
-import dede from '../img/dede.png';
-import mikrotik from '../img/mikrotik.jpg';
-import parabolic from '../img/parabolic.jpg';
-import Typed from 'react-typed';
+import { dataPortfolio } from './Data/dataPortfolio'
+
 
 const Portfolio = () => {
   return (
@@ -19,38 +15,22 @@ const Portfolio = () => {
             </div>
 
             <div className='w-full px-4 flex flex-wrap justify-center  xl:w-10/12 xl:mx-auto'>
-                <div className='mb-12 p-4 md:w-1/2'>
-                    <div className='rounded-md shadow-md overflow-hidden'>
-                       <img src={Laptop} alt="" width='w-full'/> 
-                    </div>
-                    <h3 className='font-semibold text-xl  text-dark mt-5 mb-3'>     Service Laptop</h3>
-                    <p className='font-medium text-md text-secondary'>lorem ipsum dollor sit amet lorem dolor elit elus lusto eliquam
-                    </p>
-                </div>
-                <div className='mb-12 p-4 md:w-1/2'>
-                    <div className='rounded-md shadow-md overflow-hidden'>
-                       <img src={dede} alt="" width='w-full'/> 
-                    </div>
-                    <h3 className='font-semibold  text-xl text-dark mt-5 mb-3'> LANDING PAGE Dede syarifudin</h3>
-                    <p className='font-medium text-md text-secondary'>lorem ipsum dollor sit amet lorem dolor elit elus lusto eliquam
-                    </p>
-                </div>
-                <div className='mb-12 p-4 md:w-1/2'>
-                    <div className='rounded-md shadow-md overflow-hidden'>
-                       <img src={mikrotik} alt="" width='w-full' height='450'/> 
-                    </div>
-                    <h3 className='font-semibold text-xl  text-dark mt-5 mb-3'> mikrotik</h3>
-                    <p className='font-medium text-md text-secondary'>lorem ipsum dollor sit amet lorem dolor elit elus lusto eliquam
-                    </p>
-                </div>
-                <div className='mb-12 p-4 md:w-1/2'>
-                    <div className='rounded-md shadow-md overflow-hidden'>
-                       <img src={parabolic} alt="" width='w-full'/> 
-                    </div>
-                    <h3 className='font-semibold  text-xl text-dark mt-5 mb-3'>membuat wajan parabolic </h3>
-                    <p className='font-medium text-md text-secondary'>lorem ipsum dollor sit amet lorem dolor elit elus lusto eliquam
-                    </p>
-                </div>
+                {
+                     dataPortfolio.map((data) => {
+                        return(  
+                        <div className='mb-12 p-4 md:w-1/2'>
+                            <div className='rounded-md shadow-md overflow-hidden'>
+                            <img src={data.img} alt="" width='w-full'/> 
+                            </div>
+                            <h3 className='font-semibold text-xl  text-dark mt-5 mb-3'>    {data.title}</h3>
+                            <p className='font-medium text-md text-secondary'>{data.deskripsi}
+                            </p>
+                        </div>)
+                     })
+
+                }
+              
+               
            
             </div>
         </div>
